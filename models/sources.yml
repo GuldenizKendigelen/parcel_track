@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: data-rookery-506113-a4
+    schema: flight_analysis
+
+    tables:
+      - name: flights_clean
+        identifier: flights_clean
+
+      - name: ucus_gecikme_ve_iptalleri
+        identifier: "ucus gecikme ve iptalleri"
