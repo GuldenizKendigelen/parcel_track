@@ -1,6 +1,7 @@
 -- H3 - Overall Airline Delay and Cancellation Rates
 -- Dataset period: January 2019 - August 2023
 -- 2023 excluded because it is a partial year
+{{ config(materialized='table') }}
 
 SELECT
     YEAR,
@@ -37,3 +38,4 @@ WHERE YEAR BETWEEN 2019 AND 2022
 GROUP BY
     YEAR,
     AIRLINE
+
